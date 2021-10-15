@@ -139,5 +139,19 @@ int mostrarListaClientes(eClientes listaC[], int tamC, eLocalidad listaL[]);
 /// @brief Recibe un elemento de la lista de clientes y lo muestra.
 /// @param unCliente
 void mostrarUnCliente(eClientes unCliente, eLocalidad unaLocalidad);
+/// @fn int AltaCliente(eClientes[], int, int)
+/// @brief Recibe lista de clientes, tamaño y id, ejecuta el alta en un espacio vacio.
+/// @param lista
+/// @param tam
+/// @param id
+/// @return retorna 1 si el alta es correcta y 0 caso contrario.
+int AltaCliente(eClientes lista[], int tam, int id);
+/// @fn int modificarCliente(eClientes[], int, int)
+/// @brief Recibe lista de clientes, tamaño y id, ejecuta la modificación.
+/// @param lista
+/// @param tam
+/// @param opcion
+/// @return retorna 1 si el alta es correcta y 0 caso contrario.
+int modificarCliente(eClientes lista[], int tam, int opcion, eLocalidad listaL[]);
 
 #endif /* NEXO_H_ */

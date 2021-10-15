@@ -10,65 +10,7 @@ void Inicializar(eClientes lista[], int tam)
 		lista[i].isEmpty = TRUE;
 	}
 }
-int AltaCliente(eClientes lista[], int tam, int id)
-{
-	int flag;
-	int opLocalidad;
-	flag = 0;
 
-	for (int i = 0; i < tam; i++)
-	{
-		if (lista[i].isEmpty == TRUE)
-		{
-			lista[i].idCliente = id;
-			getStringSinVal("Ingrese nombre de la empresa: ", lista[i].nombreEmpresa);
-			pedirCadenaSoloNumeros("Ingrese cuit de la empresa(sin guiones): ", lista[i].cuit);
-			getStringSinVal("Ingrese direccion: ", lista[i].direccion);
-			opLocalidad = menuLocalidad();
-			lista[i].idLocalidad = opLocalidad;
-			//getStringSinVal("Ingrese localidad: ", lista[i].localidad);
-			lista[i].isEmpty = FALSE;
-
-			flag = 1;
-			break;
-		}
-	}
-	return flag;
-}
-int modificarCliente(eClientes lista[], int tam, int opcion)
-{
-	int flag;
-	int idCli;
-	int opLocalidad;
-
-	mostrarListaClientes(lista, tam);
-	printf("\n");
-	idCli = getInt("Ingrese Id del cliente a modificar: ");
-
-	flag = 0;
-
-	for(int i=0; i<tam; i++)
-	{
-		if(lista[i].isEmpty==FALSE && lista[i].idCliente==idCli)
-		{
-			switch(opcion)
-			{
-				case 1:
-					getStringSinVal("Ingrese nueva direccion: ", lista[i].direccion);
-					flag = 1;
-				break;
-				case 2:
-					opLocalidad = menuLocalidad();
-					lista[i].idLocalidad = opLocalidad;
-					//getStringSinVal("Ingrese nueva localidad: ", lista[i].localidad);
-					flag = 1;
-				break;
-			}
-			break;
-		}
-	}
-	return flag;
-}
 int bajaCliente(eClientes lista[], int tam)
 {
 

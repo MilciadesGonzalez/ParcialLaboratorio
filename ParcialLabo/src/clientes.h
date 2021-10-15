@@ -21,20 +21,6 @@ typedef struct{
 /// @param lista
 /// @param tam
 void Inicializar(eClientes lista[], int tam);
-/// @fn int AltaCliente(eClientes[], int, int)
-/// @brief Recibe lista de clientes, tamaño y id, ejecuta el alta en un espacio vacio.
-/// @param lista
-/// @param tam
-/// @param id
-/// @return retorna 1 si el alta es correcta y 0 caso contrario.
-int AltaCliente(eClientes lista[], int tam, int id);
-/// @fn int modificarCliente(eClientes[], int, int)
-/// @brief Recibe lista de clientes, tamaño y id, ejecuta la modificación.
-/// @param lista
-/// @param tam
-/// @param opcion
-/// @return retorna 1 si el alta es correcta y 0 caso contrario.
-int modificarCliente(eClientes lista[], int tam, int opcion);
 /// @fn int bajaCliente(eClientes[], int)
 /// @brief Recibe lista de clientes y tamaño, ejecuta la baja.
 /// @param lista

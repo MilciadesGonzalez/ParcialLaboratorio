@@ -42,7 +42,7 @@ int main(void) {
 			break;
 			case 2:
 					opcionSubMenu = subMenu();
-					if(modificarCliente(listaClientes, TAMCLIENTES, opcionSubMenu)==0)
+					if(modificarCliente(listaClientes, TAMCLIENTES, opcionSubMenu, listaLocalidades)==0)
 					{
 						printf("No hay clientes activos para modificar.");
 					}
