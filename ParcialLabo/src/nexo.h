@@ -128,6 +128,11 @@ void contarCli(ePedidos unPedido, int tam, eAuxPedido aux[]);
 /// @param tamP
 /// @return Retorna 1 si se ejecutó correctamente o 0 en caso contrario.
 int promedios(eClientes listaC[], int tamC, ePedidos listaP[], int tamP);
+/// @fn void InicializarLocalidad(eClientes[], int, eLocalidad[])
+/// @brief
+/// @param listaC
+/// @param tamC
+/// @param listaL
 void InicializarLocalidad(eClientes listaC[], int tamC, eLocalidad listaL[]);
 /// @fn int mostrarListaClientes(eClientes[], int)
 /// @brief Recibe lista de clientes y tamaño, lo recorre y muestra los valosres de la lista.

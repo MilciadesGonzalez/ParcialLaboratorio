@@ -11,8 +11,14 @@ typedef struct{
 	int idLocalidad;
 	char descripcionLocalidad[50];
 }eLocalidad;
-
+/// @fn int menuLocalidad()
+/// @brief Muestra menu de localidades disponibles.
+/// @return retorna opcion elejida.
 int menuLocalidad();
+/// @fn void validarPorLocalidad(eLocalidad[], int)
+/// @brief compara id de localidad y asigna descripcion delocalidad.
+/// @param listaL
+/// @param tam
 void validarPorLocalidad(eLocalidad listaL[], int tam);
 
 #endif /* LOCALIDAD_H_ */
